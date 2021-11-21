@@ -1,3 +1,4 @@
+// Require mongoose
 const mongoose = require('mongoose');
 
 mongoose.connect(
@@ -9,4 +10,5 @@ mongoose.connect(
   }
 );
 
+// Explore mongoose
 module.exports = mongoose.connection;

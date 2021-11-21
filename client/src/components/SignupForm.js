@@ -1,40 +1,35 @@
+// Import in react natives
 import React, { useState } from 'react';
+// Import bootstrap
 import { Form, Button, Alert } from 'react-bootstrap';
+// Import in mutations
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
-// import { createUser } from '../utils/API';
 import Auth from '../utils/auth';
 
+// Sign up function
 const SignupForm = () => {
   // set initial form state
   const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
-  
   // set ADD_USER mutation - do we need data?
   const [addUser, { error, data }] = useMutation(ADD_USER);
-
   // set state for form validation
   const [validated] = useState(false);
-  
   // set state for alert
   const [showAlert, setShowAlert] = useState(false);
-
   // update state based on form input changes
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setUserFormData({ ...userFormData, [name]: value });
   };
-
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-
-    // check if form has everything (as per react-bootstrap docs)
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
     }
-
     try {
       const { data } = await addUser({
         variables: {...userFormData }
@@ -45,7 +40,6 @@ const SignupForm = () => {
       console.error(err);
       setShowAlert(true);
     }
-
     setUserFormData({
       username: '',
       email: '',

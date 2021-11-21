@@ -11,16 +11,15 @@
     <img src="https://img.shields.io/badge/HTML-gold"/>
     <img src="https://img.shields.io/badge/CSS-pink"/>
     <img src="https://img.shields.io/badge/Javascript-yellow"/>
-    <img src="https://img.shields.io/badge/jQuery-gray"/>
     <img src="https://img.shields.io/badge/-NodeJS-green"/>
-    <img src="https://img.shields.io/badge/-Handlebars-orange" />
+    <img src="https://img.shields.io/badge/jQuery-gray"/>
+    <img src="https://img.shields.io/badge/-GraphQL-hot-pink" />
     <img src="https://img.shields.io/badge/-Heroku-purple"/>
 </p>
    
 
 # Description
-The Tech Blog application allows users to view blogs/posts from other user's, as well as, create, create, update and delete their own blog/post. 
-
+The Search Book Engine application allows users to search for any book based on title or author through a Google API. Loggined user's can also save selected books that they like to refer back in the future.The Search Book Engine application is a React based application that used GraphQL for its database and is deployed on Heroku Cloud Services.
 
 
 ## Table of Contents
@@ -56,8 +55,9 @@ The Tech Blog application allows users to view blogs/posts from other user's, as
 - Javascript 
 - Node.js 
   - Express
-  - Handlebars
-- MySQL
+- React
+- GraphQL
+- Heroku
 
 
 ## Installation
@@ -70,9 +70,7 @@ npm i
 
 ## Usage
 Once all of the files and packages are install.
-Run your establish a connection to your MySQL workbench 
 and run the code below to use on your local host.
-
 ```
 node server.js
 ```

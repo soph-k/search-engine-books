@@ -19,7 +19,7 @@
    
 
 # Description
-The Search Book Engine application allows users to search for any book based on title or author through a Google API. Loggined user's can also save selected books that they like to refer back in the future.The Search Book Engine application is a React based application that used GraphQL for its database and is deployed on Heroku Cloud Services.
+The Search Book Engine application allows users to search for any book based on title or author through a Google API. Loggined user's can also save selected books that they like to refer back in the future. The Search Book Engine application is a React based application that used GraphQL for its database and is deployed on Heroku Cloud Services.
 
 
 ## Table of Contents
